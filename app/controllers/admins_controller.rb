@@ -8,7 +8,7 @@ class AdminsController < ApplicationController
     if @admin.save
       redirect_to root_path
     else
-      redirect_back
+      redirect_to :back
     end
   end
 
